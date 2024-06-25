@@ -1,0 +1,54 @@
+// Imports
+@use '../utils/' as u;
+
+// Boilerplate Styles
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-size: 62.5%; // (62.5 / 100) * 16px = 10px
+	height: 100%;
+	font-family: "Inter", sans-serif;
+	scroll-behavior: smooth;
+	background-color: red;
+	background: rgba(244, 249, 252, 0.5);
+}
+
+#root {
+	height: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	height: 600px;
+	width: 400px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:visited {
+	text-decoration: none;
+}

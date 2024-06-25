@@ -1,0 +1,78 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.website-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 30px;
+
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+	}
+
+	&__logo {
+		height: 40px;
+		width: 40px;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		align-self: stretch;
+		justify-content: space-between;
+	}
+
+	&__website-name {
+		font-size: u.$fs-heading;
+		font-weight: 600;
+		margin: 0 0 8px 0;
+	}
+
+	&__text {
+		margin: 0;
+		color: black;
+		font-size: u.$fs-xl;
+		font-weight: 400;
+
+		&--grey {
+			color: u.$fc-grey;
+		}
+
+		&--bold {
+			font-weight: 600;
+		}
+	}
+
+	&__website-time {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		align-self: stretch;
+		justify-content: space-around;
+	}
+
+	&__progress-bar {
+		position: relative;
+		width: 100px;
+		height: 10px;
+		border-radius: 5px;
+		background-color: u.$c-progress-bar;
+	}
+}
+
+.website-card__progress-bar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	max-width: 100%;
+	min-width: 5%;
+	height: 100%;
+	width: var(--width);
+	background: var(--gradient);
+}

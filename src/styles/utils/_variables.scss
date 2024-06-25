@@ -1,0 +1,27 @@
+// Font Sizes
+$fs-heading: 16px;
+$fs-l: 12px;
+$fs-xl: 14px;
+$fs-xxl: 48px;
+
+// Font Colors
+$fc-grey: #8a98a6;
+$fc-black: #414141;
+$fc-cta: #0055d1;
+$fc-red: #e44c55;
+
+// Borders
+$c-border: #e6e8ea;
+
+// Componens
+$c-progress-bar: #e6e6e6;
+
+[gradient='blue'] {
+	--background-color: linear-gradient(#577dc6, #7789d7, #938fe4);
+}
+
+$c-progress-bar-gradient-low: (#577dc6, #7789d7, #938fe4);
+$c-progress-bar-gradient-med: (#e3734a, #ed9657, #f3af5e);
+$c-progress-bar-gradient-high: (#f25fa1, #f4647e, #f96d63);
+
+// Gradients

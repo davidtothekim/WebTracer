@@ -1,0 +1,81 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.main {
+	padding: 0 25px 25px 25px;
+	height: 100%;
+
+	&__today {
+		padding: 45px 0;
+		border-bottom: 1px solid u.$c-border;
+		text-align: center;
+	}
+
+	&__sub-header {
+		color: u.$fc-grey;
+		font-size: u.$fs-heading;
+		font-weight: 400;
+		margin: 0 0 4px 0;
+
+		&--black {
+			color: u.$fc-black;
+		}
+	}
+
+	&__total-time {
+		font-size: u.$fs-xxl;
+		margin: 0 0 4px 0;
+	}
+
+	&__background-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		background-color: rgba(128, 128, 128, 0.5);
+	}
+
+	&__activity-table {
+		position: relative;
+		padding: 20px 0;
+		border-bottom: 1px solid u.$c-border;
+	}
+
+	&__activity-table-icon {
+		position: absolute;
+		right: 0;
+		top: 20px;
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		cursor: pointer;
+		background-color: #e2e2e2;
+
+		&:hover {
+			background-color: #f27073;
+		}
+	}
+
+	&__activity-table-refresh-icon {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		z-index: 2;
+	}
+
+	&__activity-table-cta {
+		margin-top: 25px;
+		font-size: u.$fs-xl;
+		text-align: center;
+		color: u.$fc-grey;
+		font-weight: 500;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+			color: u.$fc-cta;
+		}
+	}
+}

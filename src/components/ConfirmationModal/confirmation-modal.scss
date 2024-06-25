@@ -1,0 +1,57 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.confirmation-modal {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	top: 42%;
+	text-align: center;
+	margin: 0 auto;
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px;
+
+	&__header {
+		font-size: u.$fs-heading;
+		margin: 0;
+		color: u.$fc-black;
+	}
+
+	&__text {
+		font-size: u.$fs-l;
+		margin: 20px 0 30px 0;
+		color: u.$fc-black;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 100px;
+	}
+
+	&__button {
+		font-size: u.$fs-xl;
+		letter-spacing: 0.5px;
+		margin: 0;
+		font-weight: 600;
+		cursor: pointer;
+
+		&--cancel {
+			color: u.$fc-grey;
+
+			&:hover {
+				color: u.$fc-black;
+			}
+		}
+
+		&--confirm {
+			color: u.$fc-red;
+
+			&:hover {
+				opacity: 80%;
+			}
+		}
+	}
+}
