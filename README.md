@@ -1,4 +1,4 @@
-# ⌛ WebTracer
+# ⌛ WebTracer - Chrome Extension
 
 A productivity tool to track your screen time!
 WebTracer is a chrome extension that tracks your screen time. It keeps track of how much time you spend on the web everyday.
